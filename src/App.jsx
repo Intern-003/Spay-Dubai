@@ -18,6 +18,30 @@ import EmbeddedPayments from "./pages/UseCase/EmbeddedPayments";
 function App() {
   return (
     <BrowserRouter>
+      <MainLayout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/connectors" element={<Connectors />} />
+          <Route path="/about" element={<About />} />
+            <Route 
+            path="/use-cases/launching-a-payment-platform" 
+            element={<LaunchingPaymentPlatform />} 
+          />
+           <Route 
+            path="/use-cases/growing-your-payment-business" 
+            element={<GrowingYourPaymentBusiness />} 
+          />
+          <Route 
+            path="/use-cases/modernizing-payment-technology" 
+            element={<ModernizingPaymentTechnology />} 
+          />
+          <Route 
+            path="/use-cases/embedded-payments" 
+            element={<EmbeddedPayments />} 
+          />
+
+        </Routes>
+      </MainLayout>
       <Routes>
         <Route
           path="/"
@@ -72,23 +96,6 @@ function App() {
             </MainLayout>
           }
         />
-            <Route 
-            path="/use-cases/launching-a-payment-platform" 
-            element={<LaunchingPaymentPlatform />} 
-          />
-           <Route 
-            path="/use-cases/growing-your-payment-business" 
-            element={<GrowingYourPaymentBusiness />} 
-          />
-          <Route 
-            path="/use-cases/modernizing-payment-technology" 
-            element={<ModernizingPaymentTechnology />} 
-          />
-          <Route 
-            path="/use-cases/embedded-payments" 
-            element={<EmbeddedPayments />} 
-          />
-
       </Routes>
     </BrowserRouter>
   );
