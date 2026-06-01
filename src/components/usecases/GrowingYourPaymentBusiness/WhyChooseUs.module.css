@@ -1,0 +1,224 @@
+/* components/usecases/GrowingPaymentBusiness/WhyChooseUs.module.css */
+.whyChooseUs {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.sectionDescription {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #334155;
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+
+.partnersGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 32px;
+  background: white;
+  border-radius: 24px;
+  margin-bottom: 48px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.partnerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.partnerCard:hover {
+  transform: translateY(-6px);
+  background: #f8fafc;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.partnerIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.partnerCard:hover .partnerIcon {
+  transform: scale(1.05);
+}
+
+.partnerName {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1e293b;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.connectorsCard {
+  background: linear-gradient(135deg, #0a0a2a 0%, #1a1a4e 100%);
+  padding: 56px 48px;
+  border-radius: 28px;
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.connectorsCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.connectorsTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.connectorsDescription {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.92;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .partnersGrid {
+    gap: 20px;
+    padding: 32px 24px;
+  }
+  
+  .partnerCard {
+    min-width: 85px;
+    padding: 12px 16px;
+  }
+  
+  .partnerIcon {
+    width: 56px;
+    height: 56px;
+  }
+  
+  .connectorsTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .whyChooseUs {
+    padding: 60px 0;
+  }
+  
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+  
+  .sectionDescription {
+    font-size: 0.875rem;
+    margin-bottom: 32px;
+    padding: 0 16px;
+  }
+  
+  .partnersGrid {
+    gap: 16px;
+    padding: 24px 20px;
+    margin-bottom: 32px;
+  }
+  
+  .partnerCard {
+    min-width: 70px;
+    padding: 10px 12px;
+    gap: 8px;
+  }
+  
+  .partnerIcon {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .partnerIcon svg {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  
+  .partnerName {
+    font-size: 0.7rem;
+  }
+  
+  .connectorsCard {
+    padding: 36px 24px;
+  }
+  
+  .connectorsTitle {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+  }
+  
+  .connectorsDescription {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .partnersGrid {
+    gap: 12px;
+    padding: 20px 16px;
+  }
+  
+  .partnerCard {
+    min-width: 60px;
+    padding: 8px 10px;
+  }
+  
+  .partnerIcon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .partnerIcon svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  
+  .partnerName {
+    font-size: 0.6rem;
+  }
+  
+  .connectorsCard {
+    padding: 28px 20px;
+  }
+  
+  .connectorsTitle {
+    font-size: 1.125rem;
+  }
+}

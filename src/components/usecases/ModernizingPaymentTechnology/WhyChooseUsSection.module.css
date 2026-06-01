@@ -1,0 +1,114 @@
+/* components/usecases/ModernizingPaymentTechnology/WhyChooseUsSection.module.css */
+.whyChooseUs {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.sectionDescription {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #334155;
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.featureCard {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.featureCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+.featureIcon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.featureDescription {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #475569;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .whyChooseUs {
+    padding: 60px 0;
+  }
+  
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+  
+  .sectionDescription {
+    font-size: 0.875rem;
+    margin-bottom: 32px;
+    padding: 0 16px;
+  }
+  
+  .featuresGrid {
+    gap: 20px;
+  }
+  
+  .featureCard {
+    padding: 24px 20px;
+  }
+  
+  .featureIcon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+  
+  .featureTitle {
+    font-size: 1.125rem;
+  }
+  
+  .featureDescription {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+}

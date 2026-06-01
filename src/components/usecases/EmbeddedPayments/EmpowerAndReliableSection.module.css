@@ -1,0 +1,136 @@
+/* components/usecases/EmbeddedPayments/EmpowerAndReliableSection.module.css */
+.empowerReliable {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Common Styles */
+.sectionTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.sectionDescription {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #334155;
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.featureCard {
+  background: #f8fafc;
+  padding: 28px 20px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.featureCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  background: #f1f5f9;
+}
+
+.featureIcon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.featureTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.featureDescription {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #475569;
+  margin: 0;
+}
+
+/* Empower Section */
+.empowerSection {
+  margin-bottom: 80px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Reliable Section */
+.reliableSection {
+  padding-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .empowerReliable {
+    padding: 60px 0;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  
+  .sectionDescription {
+    font-size: 0.875rem;
+    margin-bottom: 32px;
+    padding: 0 16px;
+  }
+  
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .featureCard {
+    padding: 24px 20px;
+  }
+  
+  .featureIcon {
+    font-size: 2rem;
+  }
+  
+  .featureTitle {
+    font-size: 1rem;
+  }
+  
+  .featureDescription {
+    font-size: 0.75rem;
+  }
+  
+  .empowerSection {
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+  }
+}
