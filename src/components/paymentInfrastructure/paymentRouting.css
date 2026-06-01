@@ -1,0 +1,449 @@
+.routing-section {
+  width: 100%;
+  padding: 65px 0;
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at top left, rgba(19,184,175,0.05), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(52,120,246,0.05), transparent 30%),
+    #f7f9fb;
+}
+
+/* GRID */
+
+.routing-grid-bg {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(to right, rgba(0,0,0,0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.025) 1px, transparent 1px);
+
+  background-size: 180px 180px;
+}
+
+/* CONTAINER */
+
+.routing-container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* HEADING */
+
+.routing-heading {
+  text-align: center;
+
+  max-width: 900px;
+
+  margin: 0 auto 50px auto;
+}
+
+.routing-heading h2 {
+  font-size: 48px;
+  line-height: 54px;
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+
+  color: #0d2236;
+}
+
+.routing-heading p {
+  margin-top: 18px;
+
+  font-size: 15px;
+  line-height: 30px;
+
+  color: #617284;
+}
+
+/* VISUAL */
+
+.routing-visual {
+  position: relative;
+
+  width: 100%;
+  max-width: 860px;
+
+  height: 520px;
+
+  margin: 0 auto;
+}
+
+/* CENTER ENGINE */
+
+.routing-engine {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 150px;
+  height: 150px;
+
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #13b8af,
+      #0ea69d
+    );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 20px 50px rgba(19,184,175,0.22);
+
+  z-index: 5;
+}
+
+/* ICON */
+
+.engine-icon {
+  width: 64px;
+  height: 64px;
+
+  border-radius: 20px;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #13b8af;
+
+  font-size: 30px;
+}
+
+.routing-engine h4 {
+  margin-top: 14px;
+
+  font-size: 18px;
+  line-height: 24px;
+
+  text-align: center;
+
+  font-weight: 700;
+
+  color: white;
+}
+
+/* BOX */
+
+.routing-box {
+  position: absolute;
+
+  width: 135px;
+  min-height: 105px;
+
+  background: rgba(255,255,255,0.82);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(230,233,238,0.9);
+
+  border-radius: 22px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.04);
+
+  transition: 0.3s ease;
+}
+
+.routing-box:hover {
+  transform: translateY(-4px);
+}
+
+.routing-box svg {
+  font-size: 32px;
+
+  color: #13b8af;
+}
+
+.routing-box span {
+  font-size: 13px;
+  line-height: 18px;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  color: #0d2236;
+}
+
+/* POSITIONS */
+
+.merchant-box {
+  left: 240px;
+  top: 20px;
+}
+
+.settlement-box {
+  right: 240px;
+  top: 20px;
+}
+
+.bank-box {
+  right: 70px;
+  top: 200px;
+}
+
+.decline-box {
+  right: 120px;
+  bottom: 30px;
+}
+
+.fraud-box {
+  left: 140px;
+  bottom: 70px;
+}
+
+/* PAYMENT CARD */
+
+.payment-card-ui {
+  position: absolute;
+
+  left: 10px;
+  top: 190px;
+
+  width: 145px;
+
+  background: rgba(255,255,255,0.9);
+
+  border: 1px solid rgba(230,233,238,0.9);
+
+  border-radius: 24px;
+
+  padding: 16px;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.05);
+}
+
+.payment-top span {
+  font-size: 10px;
+
+  color: #94a3b8;
+}
+
+.payment-top h3 {
+  margin-top: 8px;
+
+  font-size: 22px;
+  font-weight: 800;
+
+  color: #0d2236;
+}
+
+/* INPUT */
+
+.payment-input {
+  margin-top: 14px;
+
+  height: 34px;
+
+  border-radius: 10px;
+
+  background: #eef2f6;
+}
+
+/* METHODS */
+
+.payment-methods {
+  margin-top: 14px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.payment-methods span {
+  height: 28px;
+
+  border-radius: 999px;
+
+  border: 1px solid #dfe5ea;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 12px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  color: #475569;
+}
+
+/* BUTTON */
+
+.payment-card-ui button {
+  margin-top: 16px;
+
+  width: 100%;
+  height: 36px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff4336,
+      #ff665c
+    );
+
+  color: white;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* CONNECTIONS */
+
+.route-line {
+  position: absolute;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #13b8af,
+      #3478f6
+    );
+
+  opacity: 0.8;
+}
+
+.line-1 {
+  width: 120px;
+  height: 2px;
+
+  left: 360px;
+  top: 90px;
+}
+
+.line-2 {
+  width: 120px;
+  height: 2px;
+
+  right: 360px;
+  top: 90px;
+}
+
+.line-3 {
+  width: 150px;
+  height: 2px;
+
+  left: 140px;
+  top: 260px;
+}
+
+.line-4 {
+  width: 130px;
+  height: 2px;
+
+  right: 180px;
+  bottom: 110px;
+}
+
+/* LABELS */
+
+.route-label {
+  position: absolute;
+
+  height: 30px;
+  padding: 0 14px;
+
+  border-radius: 999px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  color: white;
+}
+
+.approved {
+  left: 320px;
+  top: 248px;
+
+  background: #2563eb;
+}
+
+.denied {
+  left: 340px;
+  bottom: 65px;
+
+  background: #ff4336;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+
+  .routing-visual {
+    transform: scale(0.82);
+    transform-origin: top center;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .routing-section {
+    padding: 55px 0;
+  }
+
+  .routing-container {
+    padding: 0 20px;
+  }
+
+  .routing-heading h2 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  .routing-heading p {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .routing-visual {
+    transform: scale(0.52);
+    transform-origin: top center;
+
+    height: 340px;
+  }
+
+}
