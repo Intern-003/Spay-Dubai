@@ -44,22 +44,12 @@ export default function Navbar() {
 
       {/* Navbar */}
 
-      <header
-        className="navbar"
-        onMouseLeave={() => setActiveMenu(null)}
-      >
+      <header className="navbar" onMouseLeave={() => setActiveMenu(null)}>
         <div className="container">
           {/* Logo */}
 
-          <Link
-            to="/"
-            className="logo"
-            aria-label="SPAY Fintech Home"
-          >
-            <img
-              src={logo}
-              alt="SPAY FINTECH"
-            />
+          <Link to="/" className="logo" aria-label="SPAY Fintech Home">
+            <img src={logo} alt="SPAY FINTECH" />
           </Link>
 
           {/* Navigation */}
@@ -79,45 +69,29 @@ export default function Navbar() {
               </button>
             ))}
 
-            <Link
-              to="/connectors"
-              className="nav-link"
-            >
+            <Link to="/connectors" className="nav-link">
               Connectors
             </Link>
 
-            <Link
-              to="/about"
-              className="nav-link"
-            >
+            <Link to="/about" className="nav-link">
               About Us
             </Link>
 
-            <Link
-              to="/contact"
-              className="nav-link"
-            >
+            <Link to="/contact" className="nav-link">
               Contact Us
             </Link>
           </nav>
 
           {/* CTA */}
 
-          <Link
-            to="/contact"
-            className="demo-btn"
-          >
+          <Link to="/contact" className="demo-btn">
             Request a Demo
           </Link>
         </div>
 
         {/* Mega Menu */}
 
-        <div
-          className={`mega-wrapper ${
-            activeMenu ? "mega-open" : ""
-          }`}
-        >
+        <div className={`mega-wrapper ${activeMenu ? "mega-open" : ""}`}>
           {activeMenu && (
             <MegaMenu
               data={menuData[activeMenu]}

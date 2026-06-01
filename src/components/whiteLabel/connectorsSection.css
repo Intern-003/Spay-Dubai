@@ -1,0 +1,352 @@
+.connectors-section {
+  width: 100%;
+  padding: 140px 0;
+  background: #f7f8fa;
+  position: relative;
+  overflow: hidden;
+}
+
+/* GRID */
+
+.connectors-grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
+
+  background-size: 180px 180px;
+}
+
+/* CONTAINER */
+
+.connectors-container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1380px;
+
+  margin: 0 auto;
+  padding: 0 50px;
+
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+
+/* LEFT */
+
+.connectors-left {
+  flex: 1;
+  max-width: 560px;
+}
+
+/* TAG */
+
+.mini-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 38px;
+  padding: 0 18px;
+
+  background: rgba(19,184,175,0.08);
+
+  border: 1px solid rgba(19,184,175,0.15);
+
+  border-radius: 999px;
+
+  color: #13b8af;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  margin-bottom: 26px;
+}
+
+/* HEADING */
+
+.connectors-left h2 {
+  font-size: 68px;
+  line-height: 74px;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+
+  color: #0d2236;
+}
+
+/* DESC */
+
+.connectors-left p {
+  margin-top: 28px;
+
+  font-size: 18px;
+  line-height: 34px;
+
+  color: #5d6d7e;
+}
+
+/* STATS */
+
+.stats-row {
+  margin-top: 34px;
+
+  display: flex;
+  gap: 18px;
+}
+
+.stat-card {
+  min-width: 170px;
+
+  background: white;
+
+  border: 1px solid #e8ebef;
+
+  border-radius: 20px;
+
+  padding: 24px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.03);
+}
+
+.stat-card h3 {
+  font-size: 28px;
+  font-weight: 800;
+
+  color: #0d2236;
+}
+
+.stat-card span {
+  display: block;
+  margin-top: 8px;
+
+  font-size: 14px;
+  color: #7b8a99;
+}
+
+/* BUTTON */
+
+.connectors-btn {
+  margin-top: 36px;
+
+  height: 58px;
+  padding: 0 28px;
+
+  border: none;
+  outline: none;
+
+  border-radius: 16px;
+
+  background: #0d2236;
+  color: white;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.connectors-btn:hover {
+  transform: translateY(-2px);
+  background: #132d46;
+}
+
+/* RIGHT */
+
+.connectors-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD */
+
+.connectors-card {
+  position: relative;
+
+  width: 620px;
+
+  background: rgba(255,255,255,0.78);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255,255,255,0.7);
+
+  border-radius: 34px;
+
+  padding: 50px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 25px 80px rgba(0,0,0,0.08);
+}
+
+/* GLOW */
+
+.card-glow {
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  background: rgba(19,184,175,0.12);
+
+  border-radius: 50%;
+
+  filter: blur(80px);
+
+  top: -80px;
+  right: -60px;
+}
+
+/* LOGOS */
+
+.logos-grid {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 36px 28px;
+}
+
+.logo-item {
+  height: 72px;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.7);
+
+  border: 1px solid rgba(230,233,238,0.9);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 42px;
+  font-weight: 800;
+
+  transition: 0.3s ease;
+
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.02);
+}
+
+.logo-item:hover {
+  transform: translateY(-5px) scale(1.04);
+
+  background: white;
+}
+
+/* COLORS */
+
+.visa {
+  color: #1a5cff;
+}
+
+.mastercard {
+  color: #ff6b00;
+}
+
+.stripe {
+  color: #635bff;
+}
+
+.paypal {
+  color: #0070ba;
+}
+
+.gpay {
+  color: #5f6368;
+}
+
+.applepay {
+  color: #000;
+}
+
+.nuvei {
+  color: #12263f;
+  font-size: 30px;
+}
+
+.ppro {
+  color: #00a7d0;
+  font-size: 30px;
+}
+
+.aci {
+  color: #5146ff;
+  font-size: 28px;
+}
+
+.unlimit {
+  color: #111;
+  font-size: 28px;
+}
+
+.skrill {
+  color: #7a1f7e;
+  font-size: 32px;
+}
+
+.alipay {
+  color: #0c9ff2;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1150px) {
+
+  .connectors-container {
+    flex-direction: column;
+  }
+
+  .connectors-left {
+    max-width: 100%;
+  }
+
+  .connectors-card {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .connectors-section {
+    padding: 90px 0;
+  }
+
+  .connectors-container {
+    padding: 0 24px;
+  }
+
+  .connectors-left h2 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .connectors-left p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
