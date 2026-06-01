@@ -31,29 +31,29 @@ export const menuData = {
         title: "White-Label Payment Gateway",
         description:
           "Ready-to-launch payment software for PSPs and fintech providers.",
-        path: "/products/white-label-payment-gateway",
+        path: "/white-label-payment-gateway",
       },
       {
         icon: FiGlobe,
         title: "Payment Orchestration Platform",
         description:
           "Intelligent routing and payment optimization across multiple providers.",
-        path: "/products/payment-orchestration-platform",
+        path: "/payment-orchestration-platform",
       },
       {
         icon: FiServer,
         title: "Payment Infrastructure",
         description:
           "Enterprise-grade payment infrastructure for modern financial businesses.",
-        path: "/products/payment-infrastructure",
+        path: "/payment-infrastructure",
       },
-      {
-        icon: FiCreditCard,
-        title: "Merchant Management",
-        description:
-          "Manage merchants, transactions, settlements and reporting from one dashboard.",
-        path: "/products/merchant-management",
-      },
+      // {
+      //   icon: FiCreditCard,
+      //   title: "Merchant Management",
+      //   description:
+      //     "Manage merchants, transactions, settlements and reporting from one dashboard.",
+      //   path: "/products/merchant-management",
+      // },
     ],
   },
 
