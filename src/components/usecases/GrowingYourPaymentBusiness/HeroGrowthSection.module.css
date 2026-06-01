@@ -1,0 +1,110 @@
+/* components/usecases/GrowingPaymentBusiness/HeroGrowthSection.module.css */
+.heroGrowth {
+  padding: 80px 0 60px;
+  background: linear-gradient(135deg, #0a0a2a 0%, #1a1a4e 100%);
+  color: white;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.heroContent {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  opacity: 0.9;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.demoButton {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.demoButton:hover {
+  background: #4f52e0;
+  transform: translateY(-2px);
+}
+
+.integrationsBar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 24px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.integrationItem {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 4px 0;
+  transition: color 0.2s ease;
+}
+
+.integrationItem:hover {
+  color: #a5b4fc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heroGrowth {
+    padding: 60px 0 40px;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .description {
+    font-size: 0.875rem;
+  }
+  
+  .integrationsBar {
+    gap: 8px 16px;
+  }
+  
+  .integrationItem {
+    font-size: 0.625rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .integrationsBar {
+    gap: 6px 12px;
+  }
+  
+  .integrationItem {
+    font-size: 0.55rem;
+  }
+}

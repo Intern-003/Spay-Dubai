@@ -1,0 +1,175 @@
+/* components/HurdlesSection.module.css */
+.hurdles {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 48px;
+}
+
+.hurdlesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.hurdleCard {
+  background: white;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hurdleCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.icon {
+  font-size: 2.5rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.problemBox {
+  background: #fef2f2;
+  border-left: 4px solid #ef4444;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.problemTag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ef4444;
+  margin-bottom: 8px;
+}
+
+.problemText {
+  font-size: 0.875rem;
+  color: #7f1d1d;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.solutionBox {
+  background: #ecfdf5;
+  border-left: 4px solid #10b981;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.solutionTag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #10b981;
+  margin-bottom: 8px;
+}
+
+.solutionText {
+  font-size: 0.875rem;
+  color: #064e3b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.ctaBox {
+  background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+  padding: 48px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.ctaText {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e1b4b;
+  margin-bottom: 24px;
+}
+
+.ctaButton {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ctaButton:hover {
+  background: #4f52e0;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hurdlesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hurdles {
+    padding: 60px 0;
+  }
+  
+  .hurdlesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+  
+  .cardTitle {
+    font-size: 1.25rem;
+  }
+  
+  .ctaBox {
+    padding: 32px 24px;
+  }
+  
+  .ctaText {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,197 @@
+/* components/usecases/GrowingPaymentBusiness/PaymentTeamAndPricing.module.css */
+.paymentTeamPricing {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Payment Team Section */
+.paymentTeamSection {
+  margin-bottom: 80px;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.sectionTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.sectionSubtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #334155;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordionContainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.accordionItem {
+  background: #f8fafc;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.accordionItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.accordionTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  background: #f8fafc;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.accordionTitle:hover {
+  background: #f1f5f9;
+}
+
+.accordionTitle.active {
+  background: #6366f1;
+  color: white;
+}
+
+.titleIcon {
+  font-size: 1.25rem;
+  margin-right: 12px;
+}
+
+.titleText {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.accordionTitle.active .titleText {
+  color: white;
+}
+
+.arrow {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-left: 16px;
+  color: #64748b;
+}
+
+.accordionTitle.active .arrow {
+  color: white;
+}
+
+.accordionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: #ffffff;
+}
+
+.accordionContent.open {
+  max-height: 300px;
+}
+
+.accordionText {
+  padding: 0 24px 24px 24px;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #334155;
+}
+
+/* Pricing Section */
+.pricingSection {
+  background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+  padding: 48px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.pricingTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1e1b4b;
+  margin-bottom: 20px;
+}
+
+.pricingDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1e1b4b;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .paymentTeamPricing {
+    padding: 60px 0;
+  }
+  
+  .paymentTeamSection {
+    margin-bottom: 50px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+  
+  .sectionSubtitle {
+    font-size: 0.875rem;
+    padding: 0 16px;
+  }
+  
+  .accordionTitle {
+    padding: 16px 20px;
+  }
+  
+  .titleText {
+    font-size: 0.875rem;
+  }
+  
+  .titleIcon {
+    font-size: 1rem;
+  }
+  
+  .accordionText {
+    padding: 0 20px 20px 20px;
+    font-size: 0.75rem;
+  }
+  
+  .accordionContent.open {
+    max-height: 400px;
+  }
+  
+  .pricingSection {
+    padding: 32px 24px;
+  }
+  
+  .pricingTitle {
+    font-size: 1.5rem;
+  }
+  
+  .pricingDescription {
+    font-size: 0.875rem;
+  }
+}
