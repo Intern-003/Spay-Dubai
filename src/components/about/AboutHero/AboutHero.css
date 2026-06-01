@@ -1,0 +1,128 @@
+/* ==========================================
+   ABOUT HERO
+========================================== */
+
+.about-hero {
+  position: relative;
+  overflow: hidden;
+
+  padding: 160px 0 180px;
+
+  background:
+    linear-gradient(
+      rgba(240, 247, 248, 0.96),
+      rgba(240, 247, 248, 0.96)
+    );
+}
+
+.about-hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(8, 47, 103, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(8, 47, 103, 0.05) 1px,
+      transparent 1px
+    );
+
+  background-size: 320px 320px;
+
+  pointer-events: none;
+}
+
+.about-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero__content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-hero__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 22px;
+
+  border-radius: 999px;
+
+  background: rgba(0, 136, 204, 0.08);
+
+  color: #0088cc;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  margin-bottom: 24px;
+}
+
+.about-hero__title {
+  margin: 0;
+
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+
+  line-height: 1.05;
+  font-weight: 800;
+
+  color: #082f67;
+}
+
+.about-hero__description {
+  max-width: 850px;
+
+  margin: 32px auto 0;
+
+  font-size: 20px;
+  line-height: 1.9;
+
+  color: #5a7395;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+  .about-hero {
+    padding: 120px 0;
+  }
+
+  .about-hero__description {
+    font-size: 18px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .about-hero {
+    padding: 90px 0;
+  }
+
+  .about-hero__title {
+    font-size: 2.8rem;
+  }
+
+  .about-hero__description {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}

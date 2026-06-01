@@ -1,0 +1,152 @@
+/* ==========================================
+   COMPANY STATS
+========================================== */
+
+.company-stats {
+  padding: 140px 0;
+  background: #eef7f7;
+}
+
+.company-stats__header {
+  max-width: 850px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.company-stats__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 22px;
+
+  border-radius: 999px;
+
+  background: rgba(0, 136, 204, 0.08);
+
+  color: #0088cc;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  margin-bottom: 22px;
+}
+
+.company-stats__title {
+  font-size: clamp(2rem, 3vw, 3rem);
+
+  line-height: 1.1;
+  font-weight: 800;
+
+  color: #082f67;
+
+  margin-bottom: 24px;
+}
+
+.company-stats__description {
+  font-size: 16px;
+  line-height: 1.8;
+
+  color: #5a7395;
+}
+
+.company-stats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.company-stats__card {
+  background: #ffffff;
+
+  border-radius: 25px;
+
+  padding: 50px 30px;
+
+  text-align: center;
+
+  border: 1px solid rgba(8, 47, 103, 0.05);
+
+  box-shadow:
+    0 10px 30px rgba(8, 47, 103, 0.04);
+
+  transition: all 0.3s ease;
+}
+
+.company-stats__card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 20px 50px rgba(8, 47, 103, 0.08);
+}
+
+.company-stats__card h3 {
+  margin: 0;
+margin-left: 4px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+
+  color: #082f67;
+}
+
+.company-stats__card p {
+  margin-top: 10px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #5a7395;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1200px) {
+
+  .company-stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .company-stats {
+    padding: 90px 0;
+  }
+
+  .company-stats__title {
+    font-size: 2.4rem;
+  }
+
+  .company-stats__description {
+    font-size: 16px;
+  }
+
+  .company-stats__card {
+    padding: 40px 24px;
+  }
+
+  .company-stats__card h3 {
+    font-size: 3rem;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 576px) {
+
+  .company-stats__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .company-stats__title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,57 @@
+.connectors-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+/* Global section wrapper */
+.connectors-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Standard spacing */
+.connectors-section:not(:first-child) {
+  padding-top: 100px;
+}
+
+/* Prevent components from creating overlap */
+.connectors-section * {
+  box-sizing: border-box;
+}
+
+/* Reset dangerous layouts */
+.connectors-section h1,
+.connectors-section h2,
+.connectors-section h3,
+.connectors-section h4,
+.connectors-section h5,
+.connectors-section h6 {
+  margin-top: 0;
+}
+
+/* Large section titles */
+.connectors-section .section-title {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1.1;
+}
+
+/* Large descriptions */
+.connectors-section .section-description {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .connectors-section:not(:first-child) {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .connectors-section:not(:first-child) {
+    padding-top: 60px;
+  }
+}
