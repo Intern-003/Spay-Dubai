@@ -1,0 +1,514 @@
+/* ==========================================
+   EXPERT TEAM SECTION
+   Production Grade Styling
+========================================== */
+
+.expert-team-section {
+  padding: 52px 0 60px;
+  background: #f8fbfc;
+  position: relative;
+  overflow: hidden;
+}
+
+.expert-team-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 40px;
+  align-items: center;
+}
+
+/* ==========================================
+   LEFT CONTENT
+========================================== */
+
+.expert-team-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 18px;
+  border-radius: 999px;
+
+  background: rgba(22, 127, 170, 0.08);
+
+  color: #167faa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+  margin-bottom: 18px;
+}
+
+.expert-team-title {
+  margin: 0;
+
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -1px;
+
+  color: #0f3155;
+
+  max-width: 620px;
+}
+
+.expert-team-description {
+  margin-top: 18px;
+  margin-bottom: 28px;
+
+  max-width: 620px;
+
+  font-size: 1rem;
+  line-height: 1.75;
+  font-weight: 400;
+
+  color: #5d7189;
+}
+
+/* ==========================================
+   FEATURE CARDS
+========================================== */
+
+.expert-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+
+  margin-bottom: 28px;
+}
+
+.expert-card {
+  background: #ffffff;
+  border-radius: 18px;
+
+  padding: 18px;
+
+  border: 1px solid #edf2f7;
+  min-height: 250px;
+
+  box-shadow:
+    0 4px 12px rgba(15, 49, 85, 0.03),
+    0 18px 40px rgba(15, 49, 85, 0.04);
+
+  transition: all 0.35s ease;
+}
+
+.expert-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 10px 20px rgba(15, 49, 85, 0.06),
+    0 22px 50px rgba(15, 49, 85, 0.08);
+}
+
+.expert-card-icon {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #eef7fa;
+
+  font-size: 1.2rem;
+  color: #167faa;
+
+  margin-bottom: 14px;
+}
+
+.expert-card h3 {
+  margin: 0 0 12px;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+
+  color: #0f3155;
+}
+
+.expert-card p {
+  margin: 0;
+
+  font-size: 0.88rem;
+  line-height: 1.7;
+
+  color: #667a92;
+}
+
+/* ==========================================
+   BENEFITS
+========================================== */
+
+.expert-benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 18px;
+
+  margin-bottom: 26px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #0f3155;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.benefit-item svg {
+  color: #1fa870;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.expert-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  padding: 15px 28px;
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #1f84b6,
+    #167faa
+  );
+
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.expert-primary-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 25px rgba(22, 127, 170, 0.25);
+}
+
+/* ==========================================
+   RIGHT VISUAL
+========================================== */
+
+.expert-team-visual {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 620px;
+}
+
+/* ==========================================
+   DASHBOARD
+========================================== */
+
+.dashboard-preview {
+  position: absolute;
+  right: 10px;
+  top: 70px;
+
+  width: 360px;
+  height: 240px;
+  right: 0px;
+
+  border-radius: 26px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf2f7;
+
+  box-shadow:
+    0 15px 50px rgba(15, 49, 85, 0.08);
+
+  padding: 22px;
+}
+
+.dashboard-card {
+  background: #f8fbfd;
+  border-radius: 16px;
+}
+
+.analytics-card {
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+.dashboard-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.dashboard-stat span {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.dashboard-stat strong {
+  color: #0f3155;
+  font-size: 1.05rem;
+}
+
+.chart-line {
+  width: 100%;
+  height: 80px;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(22,127,170,.15),
+      transparent
+    );
+}
+
+.metrics-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.metric-box {
+  background: white;
+  border-radius: 14px;
+
+  padding: 16px;
+}
+
+.metric-box span {
+  display: block;
+
+  font-size: 0.82rem;
+  color: #64748b;
+
+  margin-bottom: 8px;
+}
+
+.metric-box strong {
+  color: #0f3155;
+  font-size: 1.15rem;
+}
+
+/* ==========================================
+   PHONE MOCKUP
+========================================== */
+
+.expert-phone {
+  position: relative;
+  z-index: 2;
+
+  width: 260px;
+  height: 500px;
+
+  background: #ffffff;
+
+  border-radius: 38px;
+
+  border: 8px solid #ffffff;
+
+  box-shadow:
+    0 20px 60px rgba(15,49,85,.12),
+    0 8px 20px rgba(15,49,85,.08);
+
+  overflow: hidden;
+}
+
+.phone-notch {
+  width: 120px;
+  height: 24px;
+
+  background: #f2f5f8;
+
+  border-radius: 0 0 16px 16px;
+
+  margin: 0 auto;
+}
+
+.phone-header {
+  background: linear-gradient(
+    135deg,
+    #1b93c7,
+    #167faa
+  );
+
+  color: white;
+
+  padding: 16px 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.expert-avatar {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255,.25);
+
+  font-weight: 700;
+}
+
+.phone-header h4 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.phone-header span {
+  font-size: 0.78rem;
+  opacity: 0.9;
+}
+
+.chat-body {
+  padding: 20px 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message {
+  max-width: 85%;
+
+  padding: 12px 14px;
+
+  border-radius: 14px;
+
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.message.received {
+  background: #f1f6fa;
+  color: #506274;
+}
+
+.message.sent {
+  margin-left: auto;
+
+  background: #167faa;
+  color: white;
+}
+
+.chat-input {
+  position: absolute;
+  bottom: -3px;
+  left: 14px;
+  right: 14px;
+
+  background: #f4f7fa;
+
+  border-radius: 999px;
+
+  padding: 10px 10px 10px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-input span {
+  color: #94a3b8;
+  font-size: 0.82rem;
+}
+
+.chat-input button {
+  width: 36px;
+  height: 36px;
+
+  border: none;
+  cursor: pointer;
+
+  border-radius: 50%;
+
+  background: #167faa;
+  color: white;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1200px) {
+  .expert-team-container {
+    grid-template-columns: 1fr;
+  }
+
+  .expert-team-visual {
+    min-height: auto;
+    margin-top: 30px;
+  }
+
+  .dashboard-preview {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .expert-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expert-team-title {
+    font-size: 2.55rem;
+  }
+
+  .expert-benefits {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .expert-team-section {
+    padding: 60px 0;
+  }
+
+  .expert-team-container {
+    padding: 0 20px;
+  }
+
+  .expert-team-title {
+    font-size: 2.1rem;
+  }
+
+  .expert-team-description {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .expert-phone {
+    width: 260px;
+    height: 520px;
+  }
+}

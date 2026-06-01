@@ -1,0 +1,284 @@
+.video-cta-section {
+  padding: 70px 20px 80px;
+  background: #eef7f7;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-cta-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.video-cta-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.video-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 18px;
+  margin-bottom: 18px;
+
+  border-radius: 999px;
+
+  background: rgba(27, 132, 177, 0.08);
+
+  color: #1b84b1;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.video-cta-header h2 {
+  font-size: 3.2rem;
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+
+  color: #0d2e52;
+
+  margin-bottom: 18px;
+}
+
+.video-cta-header p {
+  max-width: 760px;
+  margin: 0 auto;
+
+  font-size: 1.08rem;
+  line-height: 1.8;
+
+  color: #61748f;
+}
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-cta-video-wrapper {
+  position: relative;
+  max-width: 920px;
+  margin: 0 auto 55px;
+}
+
+.video-frame {
+  position: relative;
+
+  border-radius: 24px;
+  overflow: hidden;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 20px 60px rgba(15, 40, 70, 0.10),
+    0 10px 25px rgba(15, 40, 70, 0.05);
+}
+
+.video-frame iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  display: block;
+}
+
+.video-glow {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.12;
+}
+
+.video-glow-left {
+  left: -80px;
+  top: 40px;
+  background: #1b84b1;
+}
+
+.video-glow-right {
+  right: -80px;
+  bottom: 40px;
+  background: #0d2e52;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.video-cta-content {
+  text-align: center;
+}
+
+.video-cta-content h3 {
+  font-size: 2.55rem;
+  line-height: 1.15;
+  font-weight: 800;
+
+  color: #0d2e52;
+
+  margin-bottom: 18px;
+}
+
+.video-cta-content p {
+  max-width: 780px;
+  margin: 0 auto;
+
+  font-size: 1.05rem;
+  line-height: 1.85;
+
+  color: #61748f;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.video-cta-features {
+  max-width: 760px;
+
+  margin: 40px auto 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px 40px;
+}
+
+.video-feature {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  color: #0d2e52;
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.video-feature span {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: #1b84b1;
+
+  flex-shrink: 0;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.video-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  margin-top: 38px;
+}
+
+.video-primary-btn {
+  height: 56px;
+  padding: 0 34px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: #1b84b1;
+  color: #ffffff;
+
+  font-size: 0.98rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.video-primary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.video-secondary-btn {
+  height: 56px;
+  padding: 0 34px;
+
+  border-radius: 14px;
+  border: 1px solid #d7e3ef;
+
+  background: #1b84b1;
+  color: #ffffff;
+
+  font-size: 0.98rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.video-secondary-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .video-cta-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .video-cta-content h3 {
+    font-size: 2rem;
+  }
+
+  .video-frame iframe {
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-cta-section {
+    padding: 60px 18px 70px;
+  }
+
+  .video-cta-header h2 {
+    font-size: 2.1rem;
+  }
+
+  .video-cta-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .video-cta-features {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .video-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-primary-btn,
+  .video-secondary-btn {
+    width: 240px;
+  }
+
+  .video-frame iframe {
+    height: 340px;
+  }
+}

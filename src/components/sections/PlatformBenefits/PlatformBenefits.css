@@ -1,0 +1,230 @@
+.platform-benefits-section {
+  padding: 0px 0;
+  background: #f7fcfc;
+}
+
+.platform-benefits-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+.platform-benefits-header {
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto 48px;
+}
+
+.platform-benefits-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 16px;
+
+  border-radius: 999px;
+
+  background: #eaf5fb;
+
+  color: #0f7cb8;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  margin-bottom: 16px;
+}
+
+.platform-benefits-header h2 {
+  margin: 0 0 18px;
+
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.12;
+
+  color: #082849;
+}
+
+.platform-benefits-header p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.75;
+
+  color: #5b7190;
+}
+
+/* ===================================
+   GRID
+=================================== */
+
+.platform-benefits-grid {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 22px;
+}
+
+/* ===================================
+   CARD
+=================================== */
+
+.platform-benefit-card {
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  padding: 26px 20px;
+
+  min-height: 285px;
+
+  text-align: center;
+
+  border: 1px solid rgba(8, 40, 73, 0.06);
+
+  box-shadow:
+    0 8px 20px rgba(8, 40, 73, 0.04);
+
+  transition: all 0.3s ease;
+}
+
+.platform-benefit-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 20px 40px rgba(8, 40, 73, 0.08);
+}
+
+/* ===================================
+   ICON
+=================================== */
+
+.platform-benefit-icon {
+  width: 68px;
+  height: 68px;
+
+  margin: 0 auto 18px;
+
+  border-radius: 18px;
+
+  background: #eef8fd;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #0f7cb8;
+
+  font-size: 28px;
+}
+
+/* ===================================
+   TITLE
+=================================== */
+
+.platform-benefit-card h3 {
+  margin: 0 0 14px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.35;
+
+  color: #082849;
+}
+
+/* ===================================
+   DESCRIPTION
+=================================== */
+
+.platform-benefit-card p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.75;
+
+  color: #5b7190;
+
+  font-weight: 500;
+}
+
+/* ===================================
+   LARGE DESKTOP
+=================================== */
+
+@media (max-width: 1200px) {
+  .platform-benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===================================
+   TABLET
+=================================== */
+
+@media (max-width: 992px) {
+  .platform-benefits-section {
+    padding: 70px 0;
+  }
+
+  .platform-benefits-header h2 {
+    font-size: 36px;
+  }
+
+  .platform-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media (max-width: 768px) {
+  .platform-benefits-container {
+    padding: 0 20px;
+  }
+
+  .platform-benefits-header {
+    margin-bottom: 40px;
+  }
+
+  .platform-benefits-header h2 {
+    font-size: 30px;
+  }
+
+  .platform-benefits-header p {
+    font-size: 15px;
+  }
+
+  .platform-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .platform-benefit-card {
+    min-height: auto;
+    padding: 24px 20px;
+  }
+
+  .platform-benefit-icon {
+    width: 62px;
+    height: 62px;
+
+    font-size: 24px;
+  }
+
+  .platform-benefit-card h3 {
+    font-size: 16px;
+  }
+
+  .platform-benefit-card p {
+    font-size: 13px;
+  }
+}

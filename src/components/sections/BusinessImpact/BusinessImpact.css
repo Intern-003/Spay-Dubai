@@ -1,0 +1,323 @@
+/* ==========================================
+   BUSINESS IMPACT SECTION
+========================================== */
+
+.business-impact-section {
+  padding: 55px 0 65px;
+  background: #eef7f7;
+  overflow: hidden;
+}
+
+.business-impact-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.business-impact-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 34px;
+}
+
+.business-impact-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 18px;
+
+  margin-bottom: 14px;
+
+  border-radius: 999px;
+
+  background: rgba(18, 134, 201, 0.08);
+
+  color: #1286c9;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.business-impact-header h2 {
+  margin: 0 0 14px;
+
+  font-size: 40px;
+  line-height: 1.12;
+  font-weight: 800;
+  letter-spacing: -1px;
+
+  color: #082849;
+}
+
+.business-impact-header p {
+  max-width: 680px;
+  margin: 0 auto;
+
+  font-size: 15px;
+  line-height: 1.85;
+
+  color: #5e7390;
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.business-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.impact-card {
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 18px;
+
+  min-height: 190px;
+
+  border: 1px solid rgba(8, 40, 73, 0.06);
+
+  box-shadow:
+    0 8px 20px rgba(8, 40, 73, 0.05),
+    0 2px 8px rgba(8, 40, 73, 0.03);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 12px;
+
+  transition: all 0.3s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 14px 30px rgba(8, 40, 73, 0.08),
+    0 6px 14px rgba(8, 40, 73, 0.04);
+}
+
+.impact-card-content {
+  flex: 1;
+}
+
+.impact-card-content h3 {
+  margin: 0 0 8px;
+
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 700;
+
+  color: #082849;
+}
+
+.impact-card-content p {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.7;
+
+  color: #5e7390;
+}
+
+/* ==========================================
+   VALUES
+========================================== */
+
+.impact-value {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 800;
+
+  color: #18a596;
+}
+
+.revenue-value {
+  color: #1286c9;
+  font-size: 38px;
+}
+
+.launch-value {
+  color: #ff5b61;
+}
+
+/* ==========================================
+   SUCCESS RING
+========================================== */
+
+.progress-ring {
+  width: 76px;
+  height: 76px;
+
+  border-radius: 50%;
+
+  background:
+    conic-gradient(
+      #18a596 0deg 359deg,
+      #e6edf2 359deg 360deg
+    );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.progress-ring-inner {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  color: #082849;
+}
+
+/* ==========================================
+   GROWTH CHART
+========================================== */
+
+.growth-chart {
+  display: flex;
+  align-items: flex-end;
+
+  gap: 6px;
+
+  height: 72px;
+
+  flex-shrink: 0;
+}
+
+.bar {
+  width: 14px;
+  border-radius: 10px 10px 0 0;
+}
+
+.bar-one {
+  height: 32px;
+  background: #d6eaf5;
+}
+
+.bar-two {
+  height: 52px;
+  background: #77bfe5;
+}
+
+.bar-three {
+  height: 72px;
+  background: #1286c9;
+}
+
+/* ==========================================
+   LAUNCH BOX
+========================================== */
+
+.launch-visual {
+  width: 78px;
+  height: 78px;
+
+  border-radius: 16px;
+
+  background: #fff2f3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.launch-visual span {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+
+  color: #ff5b61;
+}
+
+.launch-visual small {
+  margin-top: 4px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  color: #082849;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1024px) {
+  .business-impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-card {
+    min-height: auto;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+  .business-impact-section {
+    padding: 50px 0;
+  }
+
+  .business-impact-header {
+    margin-bottom: 28px;
+  }
+
+  .business-impact-header h2 {
+    font-size: 30px;
+  }
+
+  .business-impact-header p {
+    font-size: 14px;
+  }
+
+  .impact-card {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 18px;
+  }
+
+  .progress-ring,
+  .growth-chart,
+  .launch-visual {
+    margin-top: 10px;
+  }
+}

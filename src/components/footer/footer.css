@@ -1,0 +1,269 @@
+/* ===================================================
+   FOOTER
+=================================================== */
+
+.footer {
+  background: #07172b;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 70px 40px 30px;
+}
+
+/* ===================================================
+   TOP SECTION
+=================================================== */
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 50px;
+}
+
+/* ===================================================
+   COMPANY
+=================================================== */
+
+.footer-company {
+  max-width: 450px;
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 22px;
+}
+.footer-logo-wrapper {
+  width: fit-content;
+  padding: 0px 12px;
+  background: #ffffff;
+  border-radius: 14px;
+
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.1),
+    0 8px 30px rgba(21,127,168,0.25);
+}
+
+.footer-description {
+  color: #b6c5d8;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer-contact-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact-label {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 6px;
+}
+
+.footer-contact-item p,
+.footer-contact-item a {
+  color: #b6c5d8;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-contact-item a:hover {
+  color: #ffffff;
+}
+
+/* ===================================================
+   COLUMNS
+=================================================== */
+
+.footer-column h4 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column li {
+  margin-bottom: 14px;
+}
+
+.footer-column a {
+  color: #b6c5d8;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+  padding-left: 4px;
+}
+
+/* ===================================================
+   TRUST BAR
+=================================================== */
+
+.footer-trust-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.trust-item {
+  background: rgba(255,255,255,0.05);
+  color: #ffffff;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: all 0.25s ease;
+}
+
+.trust-item:hover {
+  background: #0e4a8f;
+}
+
+/* ===================================================
+   BOTTOM
+=================================================== */
+
+.footer-bottom {
+  padding-top: 28px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-legal-links a {
+  color: #b6c5d8;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-legal-links a:hover {
+  color: white;
+}
+
+.copyright {
+  color: #7d91aa;
+  font-size: 13px;
+}
+
+/* ===================================================
+   SOCIALS
+=================================================== */
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.social-link {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.05);
+
+  color: white;
+
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.social-link:hover {
+  background: #157fa8;
+  transform: translateY(-2px);
+}
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media (max-width: 1200px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-company {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .footer-container {
+    padding: 50px 20px 25px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-socials {
+    margin-top: 10px;
+  }
+
+  .footer-legal-links {
+    gap: 14px;
+  }
+}
+    
