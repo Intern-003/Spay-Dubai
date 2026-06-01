@@ -1,0 +1,291 @@
+/* =====================================================
+   WHY CHOOSE SPAY
+===================================================== */
+
+.why-spay {
+  position: relative;
+  padding: 50px 0 740px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+    
+.why-spay .container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.why-spay__header {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto 80px;
+
+  text-align: center;
+
+  flex: none;
+}
+
+.why-spay__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 22px;
+
+  border-radius: 999px;
+
+  background: rgba(0, 136, 204, 0.08);
+
+  color: #0088cc;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.why-spay__title {
+  margin-top: 24px;
+
+  font-size: clamp(2.8rem, 4vw, 4.5rem);
+
+  line-height: 1.1;
+  font-weight: 800;
+
+  color: #082f67;
+}
+
+.why-spay__description {
+  max-width: 820px;
+
+  margin: 24px auto 0;
+
+  font-size: 18px;
+  line-height: 1.9;
+
+  color: #5a7395;
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.why-spay__grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 28px;
+
+  align-items: stretch;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.why-spay__card {
+  position: relative;
+
+  background: #ffffff;
+
+  border-radius: 28px;
+
+  padding: 38px 32px;
+
+  min-height: 340px;
+
+  border: 1px solid rgba(8, 47, 103, 0.06);
+
+  box-shadow:
+    0 10px 30px rgba(8, 47, 103, 0.04),
+    0 2px 8px rgba(8, 47, 103, 0.03);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.why-spay__card:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(0, 136, 204, 0.15);
+
+  box-shadow:
+    0 30px 60px rgba(8, 47, 103, 0.10),
+    0 10px 20px rgba(8, 47, 103, 0.05);
+}
+
+/* =====================================================
+   ICON
+===================================================== */
+
+.why-spay__icon {
+  width: 78px;
+  height: 78px;
+
+  border-radius: 22px;
+
+  background: rgba(0, 136, 204, 0.08);
+
+  color: #0088cc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 28px;
+
+  transition: all 0.35s ease;
+}
+
+.why-spay__card:hover .why-spay__icon {
+  transform: scale(1.05);
+
+  background: rgba(0, 136, 204, 0.12);
+}
+
+/* =====================================================
+   CARD TITLE
+===================================================== */
+
+.why-spay__card h3 {
+  margin: 0 0 18px;
+
+  font-size: 1.75rem;
+  font-weight: 800;
+
+  line-height: 1.25;
+
+  color: #082f67;
+}
+
+/* =====================================================
+   CARD DESCRIPTION
+===================================================== */
+
+.why-spay__card p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.9;
+
+  color: #5a7395;
+}
+
+/* =====================================================
+   LARGE TABLET
+===================================================== */
+
+@media (max-width: 1200px) {
+
+  .why-spay {
+    padding: 180px 0 120px;
+  }
+
+  .why-spay__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-spay__card {
+    min-height: 300px;
+  }
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .why-spay {
+    padding: 100px 0;
+  }
+
+  .why-spay .container {
+    padding: 0 20px;
+  }
+
+  .why-spay__header {
+    margin-bottom: 60px;
+  }
+
+  .why-spay__title {
+    font-size: 2.4rem;
+  }
+
+  .why-spay__description {
+    font-size: 16px;
+  }
+
+  .why-spay__grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .why-spay__card {
+    min-height: auto;
+    padding: 32px 26px;
+  }
+
+  .why-spay__card h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 576px) {
+
+  .why-spay {
+    padding: 80px 0;
+  }
+
+  .why-spay__title {
+    font-size: 2rem;
+  }
+
+  .why-spay__description {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .why-spay__card {
+    padding: 28px 22px;
+    border-radius: 22px;
+  }
+
+  .why-spay__icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 18px;
+  }
+
+  .why-spay__card h3 {
+    font-size: 1.35rem;
+  }
+
+  .why-spay__card p {
+    font-size: 15px;
+  }
+}
